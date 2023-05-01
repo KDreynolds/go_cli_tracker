@@ -8,13 +8,12 @@ import (
     "os"
     "strconv"
     "strings"
-    "time"
     "github.com/olekukonko/tablewriter"
 )
 
 type Task struct {
     Description string
-    DueDate     time.Time
+    DueDate     string
     Priority    string
     Completed   bool
 }
@@ -30,9 +29,9 @@ func addTask() Task {
     scanner.Scan()
     description := scanner.Text()
 
-    fmt.Print("Enter due date (YYYY-MM-DD): ")
+    fmt.Print("Enter time frame(today, tomorrow, next week, year 3000?): ")
     scanner.Scan()
-    dueDate, _ := time.Parse("2006-01-02", scanner.Text())
+    dueDate := scanner.Text()
 
     fmt.Print("Enter priority (high/medium/low): ")
     scanner.Scan()
@@ -104,14 +103,10 @@ func printTasks(tasks []Task) {
             priorityColor = "\x1b[31m" // red
         }
 
-        if task.Completed {
-            description = "\x1b[2m" + description + "\x1b[0m" // dimmed text
-        }
-
         table.Append([]string{
             strconv.Itoa(i + 1),
             description,
-            task.DueDate.Format("2006-01-02"),
+            task.DueDate,
             priorityColor + task.Priority + "\x1b[0m", // reset color
         })
     }
@@ -168,7 +163,7 @@ func main() {
             fmt.Print("Enter a command (add, edit, delete, quit): ")
             scanner.Scan()
             command := scanner.Text()
-        
+
             switch strings.ToLower(command) {
             case "add":
                 task := addTask()
