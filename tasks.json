@@ -1,0 +1,28 @@
+{
+    "Tasks": [
+        {
+            "Description": "add keyboard shortcut mode to 'vimify' the task manager app",
+            "DueDate": "2023-04-28T00:00:00Z",
+            "Priority": "medium",
+            "Completed": false
+        },
+        {
+            "Description": "finish cli tool",
+            "DueDate": "2023-04-29T00:00:00Z",
+            "Priority": "high",
+            "Completed": false
+        },
+        {
+            "Description": "resign from O-360",
+            "DueDate": "2023-05-01T00:00:00Z",
+            "Priority": "high",
+            "Completed": false
+        },
+        {
+            "Description": "push to git",
+            "DueDate": "2023-04-30T00:00:00Z",
+            "Priority": "low",
+            "Completed": false
+        }
+    ]
+}
