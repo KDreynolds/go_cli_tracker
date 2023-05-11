@@ -1,19 +1,31 @@
 {
     "Tasks": [
         {
-            "Description": "add keyboard shortcuts",
-            "DueDate": "tomorrow",
+            "Description": "search MT dealerships inventory",
+            "DueDate": "today",
             "Priority": "medium",
             "Completed": false
         },
         {
-            "Description": "finish cli tool",
-            "DueDate": "next week",
-            "Priority": "high",
+            "Description": "create list of emails for MT dealers",
+            "DueDate": "today",
+            "Priority": "medium",
             "Completed": false
         },
         {
-            "Description": "email BP start date",
+            "Description": "weed whack",
+            "DueDate": "tomorrow",
+            "Priority": "low",
+            "Completed": false
+        },
+        {
+            "Description": "fold laundry",
+            "DueDate": "today",
+            "Priority": "low",
+            "Completed": false
+        },
+        {
+            "Description": "shower",
             "DueDate": "today",
             "Priority": "high",
             "Completed": false
