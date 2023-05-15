@@ -13,7 +13,7 @@ import (
 	"github.com/olekukonko/tablewriter"
 )
 
-const baseURL = "http://localhost:8080"
+const baseURL = "http://192.168.2.24:8080"
 
 type Task struct {
 	Description string
